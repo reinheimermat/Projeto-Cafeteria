@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container_sobre {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'd1 d2';
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.container_sobre .div_01 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: d1;
+  padding: 20vh 0vw 10vh 15vw;
+}
+
+.container_sobre .div_01 h1 {
+  text-align: justify;
+  color: #D7B56D;
+  font-weight: bold;
+}
+
+.container_sobre .div_01 p {
+  text-align: justify;
+  color: #2B2A28;
+}
+
+.container_sobre .div_02 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: d2;
+  padding: 10vh 15vw 10vh 5vw;
+}
+
+.container_sobre .div_02 img {
+  height: 540px;
+  width: 400px;
+}
+/*# sourceMappingURL=Sobre.module.css.map */
