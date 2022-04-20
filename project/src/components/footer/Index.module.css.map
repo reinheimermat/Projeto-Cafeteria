@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,0EAAI;AAEZ,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,OAAkB;CACjC",
+    "sources": [
+        "Index.module.scss"
+    ],
+    "names": [],
+    "file": "Index.module.css"
+}

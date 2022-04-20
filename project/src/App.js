@@ -1,8 +1,11 @@
 import './App.css';
 import Cover from './components/cover/Cover';
-import { Gallery } from './components/gallery/Gallery';
+import Footer from './components/footer/Index';
+import Grid from './components/grid/Grid';
+import Location from './components/location/Index';
 import NavBar from './components/navbar/NavBar';
 import Sobre from './components/sobre/Sobre';
+
 
 function App() {
   return (
@@ -10,7 +13,9 @@ function App() {
       <NavBar/>
       <Cover/>
       <Sobre/>
-      <Gallery/>
+      <Grid/>
+      <Location/>
+      <Footer/>
     </div>
   );
 }

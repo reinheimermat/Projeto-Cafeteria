@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './Sobre.module.css'
 import Btn from '../btn/Btn';
+import Btn_transparent from '../btn_transparent';
 
 const Sobre = () => {
     return (
@@ -13,7 +14,7 @@ const Sobre = () => {
             
                 <p>Curabitur sollicitudin, enim sit amet maximus blandit, nisl leo tincidunt odio, ac feugiat sem ante vitae ante. Vestibulum in massa elementum, sagittis libero vehicula, porta ex. Ut vel faucibus leo. Duis nec massa volutpat, ullamcorper erat sed, rutrum nisl. Duis tincidunt urna non iaculis rhoncus. Cras tincidunt sit amet diam ac pharetra.</p>
             
-                <Btn/>
+                <Btn_transparent/>
             </article>
 
             {/* Article das imagens */}

@@ -1,0 +1,102 @@
+.main {
+  background-color: #202020;
+}
+
+.main .grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'div1 div2 div3' 'div4 div5 div6' 'div7 div8 div9';
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 350px 350px 350px;
+      grid-template-rows: 350px 350px 350px;
+  gap: 10px;
+  padding: 0 10vw;
+  padding-bottom: 30px;
+}
+
+.grid div {
+  background-color: #2B2A28;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid #div_01 {
+  background-color: #2B2A28;
+  background-image: url("https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: div1;
+}
+
+.grid #div_02 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: div2;
+  background-image: url("https://images.pexels.com/photos/437716/pexels-photo-437716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.grid #div_03 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: div3;
+  background-image: url("https://images.pexels.com/photos/2478313/pexels-photo-2478313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.grid #div_04 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: div4;
+  background-image: url("https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: left;
+}
+
+.grid #div_05 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: div5;
+  background-image: url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.grid #div_06 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: div6;
+  background-image: url("https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.grid #div_07 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: div7;
+}
+
+.grid #div_08 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: div8;
+}
+
+.grid #div_09 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: div9;
+}
+
+.main .content h1 {
+  color: #D7B56D;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.main .content p {
+  color: white;
+  text-align: center;
+  padding: 5px 10vw;
+}
+/*# sourceMappingURL=Grid.module.css.map */

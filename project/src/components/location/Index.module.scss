@@ -1,0 +1,38 @@
+// Paleta
+$jet: #2B2A28;
+$white: #ffffff;
+$burlywood: #D7B56D;
+$dark-liver-horses: #613B32;
+$light-blue: #BDDDE8;
+
+.container {
+    background-color: #121212;
+    display: flex;
+    gap: 30px;
+    padding: 5vh 10vw;
+}
+
+.container .content {
+    width: 620px;
+    color: white;
+
+    h1 {
+        color: $burlywood;
+        text-transform: uppercase;
+    }
+
+    ul {
+        columns: 2;
+    }
+}
+
+.container .maps {
+    width: 620px;
+}
+
+.container .maps iframe {
+    width: 620px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}

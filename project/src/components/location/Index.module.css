@@ -1,0 +1,35 @@
+.container {
+  background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 5vh 10vw;
+}
+
+.container .content {
+  width: 620px;
+  color: white;
+}
+
+.container .content h1 {
+  color: #D7B56D;
+  text-transform: uppercase;
+}
+
+.container .content ul {
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.container .maps {
+  width: 620px;
+}
+
+.container .maps iframe {
+  width: 620px;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=Index.module.css.map */

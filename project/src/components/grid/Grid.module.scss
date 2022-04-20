@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+// Paleta
+$jet: #2B2A28;
+$white: #ffffff;
+$burlywood: #D7B56D;
+$dark-liver-horses: #613B32;
+$light-blue: #BDDDE8;
+
+
+.main {
+    background-color: #202020;
+}
+
+.main .grid {
+    display: grid;
+    grid-template-areas: 'div1 div2 div3'
+                         'div4 div5 div6'
+                         'div7 div8 div9';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px;
+    padding: 0 10vw;
+    padding-bottom: 30px;
+}
+
+.grid div {
+    background-color: $jet;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid #div_01 {
+    background-color: $jet;
+    background-image: url('https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: div1;
+}
+
+.grid #div_02 {
+    grid-area: div2;
+    background-image: url('https://images.pexels.com/photos/437716/pexels-photo-437716.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.grid #div_03 {
+    grid-area: div3;
+    background-image: url('https://images.pexels.com/photos/2478313/pexels-photo-2478313.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.grid #div_04 {
+    grid-area: div4;
+    background-image: url('https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: left;
+}
+
+.grid #div_05 {
+    grid-area: div5;
+    background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.grid #div_06 {
+    grid-area: div6;
+    background-image: url('https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+.grid #div_07 {
+    grid-area: div7;
+}
+
+.grid #div_08 {
+    grid-area: div8;
+}
+
+.grid #div_09 {
+    grid-area: div9;
+}
+
+.main .content {
+    h1 {
+        color: $burlywood;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 30px;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        padding: 5px 10vw;
+    }
+}
