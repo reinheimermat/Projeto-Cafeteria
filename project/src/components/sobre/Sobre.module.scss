@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Streetwear;
+    src: url('../../assets/fonts/Streetwear.otf');
+}
+
 $jet: #2B2A28;
 $white: #ffffff;
 $burlywood: #D7B56D;
@@ -23,9 +28,10 @@ $light-blue: #BDDDE8;
     padding: 20vh 0vw 10vh 10vw;
 
     h1 {
-        text-align: justify;
         color: $burlywood;
-        font-weight: bold;
+        font-family: Streetwear;
+        font-style: italic;
+        text-transform: initial;
     }
 
     p {

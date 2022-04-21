@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className={styles.nav_bar}>
             <a href='#' title='Cafeteria'>
                 <div className={styles.logotipo}>
-                    <span>Theuzin</span> Cafeteria
+                    <p>Vintage Coffee</p>
                 </div>
             </a>
 
@@ -28,7 +28,7 @@ const NavBar = () => {
 
                 {/* Conteúdo Do Menu */}
                 <div className={styles.drop_content}>
-                    <a>Home</a>
+                    <a><p>Home</p></a>
                     <a>Produtos</a>
                     <a>Franquias</a>
                     <a>Contato</a>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Streetwear;
+  src: url("../../assets/fonts/Streetwear.otf");
+}
+
 .container {
   background-color: #121212;
   display: -webkit-box;
@@ -14,7 +19,9 @@
 
 .container .content h1 {
   color: #D7B56D;
-  text-transform: uppercase;
+  font-family: Streetwear;
+  font-style: italic;
+  text-transform: initial;
 }
 
 .container .content ul {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Streetwear;
+  src: url("../../assets/fonts/Streetwear.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +27,9 @@ body {
 .container_cover article h1 {
   color: #D7B56D;
   font-size: 3em;
-  font-weight: bold;
+  font-family: Streetwear;
+  font-style: italic;
+  text-transform: initial;
 }
 
 .container_cover article p {

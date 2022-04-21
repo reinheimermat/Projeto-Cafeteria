@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Streetwear;
+    src: url('../../assets/fonts/Streetwear.otf') format('otf');
+}
+
 // Paleta
 $jet: #2B2A28;
 $white: #ffffff;
@@ -80,10 +85,11 @@ $light-blue: #BDDDE8;
 .main .content {
     h1 {
         color: $burlywood;
-        font-weight: bold;
         text-align: center;
-        text-transform: uppercase;
         padding-top: 30px;
+        font-family: Streetwear;
+        font-style: italic;
+        text-transform: initial;
     }
 
     p {

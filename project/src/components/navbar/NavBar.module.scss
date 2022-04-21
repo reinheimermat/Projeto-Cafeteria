@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+@font-face {
+    font-family: Streetwear;
+    src: url('../../assets/fonts/Streetwear.otf');
+}
 
 // Paleta
 $jet: #2B2A28;
@@ -9,7 +16,7 @@ $light-blue: #BDDDE8;
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -25,6 +32,7 @@ html {
     background-color: rgba(0, 0, 0, 0.616);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid black;
+    color: white;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -38,22 +46,30 @@ html {
 .nav_bar .logotipo {
     padding-left: 10%;
     display: inline-block;
-}
-
-.nav_bar .logotipo span {
-    color: white;
+    padding-top: 10px;
+    
+    p {
+        color: $burlywood;
+        font-family: Streetwear;
+        font-style: italic;
+        text-transform: initial;
+        letter-spacing: 2px;
+    }
 }
 
 .nav_bar .menu {
     float: right;
     padding-right: 10%;
-    color: white;
 }
 
 .nav_bar .menu a {
     font-size: 1.2rem;
-    padding: 8px 15px;
+    padding: 0 15px;
     transition: 0.5s;
+    font-family: 'Akshar', sans-serif;
+    font-weight: 200;
+    letter-spacing: 5px;
+
 }
 
 .nav_bar .menu a:hover {
@@ -98,7 +114,10 @@ html {
     padding: 12px 16px;
     text-decoration: none;
     text-align: left;
-    color: cadetblue;
+}
+
+.drop_content a p {
+    color: #D7B56D;
 }
 
 .nav_bar .drop_content a:hover {

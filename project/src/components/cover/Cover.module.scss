@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Streetwear;
+    src: url('../../assets/fonts/Streetwear.otf');
+}
+
 // Paleta
 $jet: #2B2A28;
 $white: #ffffff;
@@ -28,9 +33,11 @@ body {
 }
 
 .container_cover article h1 {
-    color: #D7B56D;
+    color: $burlywood;
     font-size: 3em;
-    font-weight: bold;
+    font-family: Streetwear;
+    font-style: italic;
+    text-transform: initial;
 }
 
 .container_cover article p {
