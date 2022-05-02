@@ -1,9 +1,70 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+// Paleta
+$jet: #2B2A28;
+$white: #ffffff;
+$burlywood: #D7B56D;
+$dark-liver-horses: #613B32;
+$light-blue: #BDDDE8;
+
 
 footer {
-    background: rgb(238, 238, 238);
+    background-color: black;
 }
 
-.h1 {
-    // color: aqua;
+.container {
+    display: grid;
+    grid-template-areas: 'l c r';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .div_page {
+    grid-area: l;
+    padding: 30px;
+}
+
+.container .div_page img {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.container .div_page p {
+    color: white;
+    font-size: 13px;
+}
+
+.container .div_page i {
+    padding-right: 10px;
+}
+
+// DIV SOCIAL
+.container .div_social {
+    grid-area: c;
+    padding: 30px;
+
+    h3 {
+        color: $burlywood;
+        font-family: 'Akshar', sans-serif;
+    }
+
+    hr {
+        background-image: linear-gradient(to right, $light-blue, transparent);
+        height: 2px;
+    }
+}
+
+.location i{
+    display: flex;
+    
+}
+
+
+.container .div_contact {
+    grid-area: r;
+    background: blueviolet;
+}
+
+.ico {
+    color: #D7B56D;
 }

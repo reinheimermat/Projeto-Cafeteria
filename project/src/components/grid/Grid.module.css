@@ -10,7 +10,7 @@
 .main .grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'div1 div2 div3' 'div4 div5 div6' 'div7 div8 div9';
+      grid-template-areas: 'div1 div2 div3' 'div4 div5 div6' 'div7 div8 div9';
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 350px 350px 350px;

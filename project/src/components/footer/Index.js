@@ -2,62 +2,60 @@ import React from "react";
 
 import styles from './Index.module.css';
 
-import { BsFacebook } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { BsYoutube } from 'react-icons/bs';
-import { BsTelephoneFill } from 'react-icons/bs'
-import { SiGooglemaps } from 'react-icons/si';
-import { GrMail } from 'react-icons/gr';
+import logo from '../../assets/images/Logo.png';
+
+import { BsFacebook, BsInstagram, BsTelephoneFill, BsWhatsapp } from  'react-icons/bs';
+
+import { MdLocationOn, MdMail } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <footer className={styles}>
-            <div className={styles.main_content}>
-                <div className="left box">
-                    <h2>Sobre Nós</h2>
-                    <div className={styles.content}>
-                        <p>hfhfhfhfhfhfhfhfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
-                    </div>
-                    <div className={styles.social}>
-                        <a href="#"><BsFacebook size={20} color="#3b5998"/></a>
-                        <a href="#"><BsTwitter size={20} color="#00acee"/></a>
-                        <a href="#"><BsInstagram size={20} color="#8a3ab9"/></a>
-                        <a href="#"><BsYoutube size={20} color="#c4302b"/></a>
-                    </div>
-                </div>
-                <div className={styles.center_box}>
-                    <h2>Endereço</h2>
-                    <div className={styles.content}>
-                        <div className={styles.place}>
-                            <span><SiGooglemaps size={20}/></span>
-                            <span className={styles.text}>AV Henrique Bier, Campina</span>
-                        </div> {/* /content */}
-                         
-                        <div className={styles.phone}>
-                            <span><BsTelephoneFill size={20}/></span>
-                            <span className={styles.text}>+55 51 9970-0087</span>
-                        </div> {/* /phone */}
+        <footer>
+            <section className={styles.container}>
 
-                        <div className={styles.email}>
-                            <span><GrMail size={20}/></span>
-                            <span className={styles.text}>vintagecoffee@gmail.com</span>
-                        </div> {/* /email */}
-                    </div>  
-                </div>
+                <article className={styles.div_page}>
+                    <a href="#"><img src={logo} alt="logo"></img></a>
 
-                <div className={styles.rigth_box}>
-                    <h2>Contato</h2>
-                    <div className={styles.content}>
-                        <form action="#">
-                            <div className={styles.email}>
-                                <label></label>
-                                <input type={styles.email} required></input>
-                            </div>
-                        </form>
-                    </div>  
-                </div>
-            </div> {/* /main_content */}
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                
+                    <i><BsFacebook color="#BDDDE8" size={20}/></i>
+                    <i><BsInstagram color="#BDDDE8" size={20}/></i>
+                    <i><BsWhatsapp color="#BDDDE8"size={20}/></i>
+                </article>
+
+                <article className={styles.div_social}>
+                    <h3>Endereço</h3>
+                    <hr/>
+                    <div id={styles.location}>
+                        <i><MdLocationOn size={25} className={styles.ico}/></i>
+                        <p>São Leopoldo - RS</p>
+                    </div>
+
+                    <div id={styles.phone}>
+                        <i><BsTelephoneFill size={20} className={styles.ico}/></i>
+                        <p>+55 51 912345678</p>
+                    </div>
+
+                    <div id={styles.email}>
+                        <i><MdMail size={20} className={styles.ico}/></i>
+                        <a href="#">vintagecoffee@gmail.com</a>
+                    </div>
+                </article>
+
+                <article className={styles.div_contact}>
+                    <h2>Fale Conosco!</h2>
+
+                    <form>
+                        <label>Email:</label>
+                        <input type="email" name="" id=""/>
+                        
+                        <label>Mensagem</label>
+                        <textarea cols={30} rows={10}></textarea>
+                    </form>
+
+                    <button>Enviar</button>
+                </article>
+            </section>
         </footer>
     );
 };
